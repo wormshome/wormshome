@@ -1,0 +1,90 @@
+$(function(){
+    //변수 모음
+    var randomNumber = parseInt(Math.random()*10+1);
+    var interview_Li_Length = $(".main--interview__content--wrap ul li").length;
+    var randomEq = randomNumber%interview_Li_Length;
+
+    //함수1 : 첫번째 이외의 나머지 전부 안보이게
+    function first_view () {
+        $(".main--interview__content--wrap ul li").eq(0).css("display","block");
+        $(".main--interview__content--wrap ul li:not(:first-child)").css("display","none");
+    }
+    //함수2 : 임의의 인터뷰를 가장 첫번째로 이동
+    function randomView (){
+        $(".main--interview__content--wrap ul li").eq(randomEq).prependTo('.main--interview__content--wrap ul');
+    }
+
+    //왼쪽버튼 : 마지막 리스트를 처음 리스트로 옮김 --- 오른쪽버튼 : 다음 리스트를 처음 리스트로 옮김
+    /*function leftmove() {
+        $(".itv_left").click(function () {
+            $(".main--interview__content--wrap ul li:last-child").prependTo('.main--interview__content--wrap ul');
+            first_view();
+        })
+    }
+    function rightmove() {
+        $(".itv_right").click(function () {
+            $(".main--interview__content--wrap ul li:first-child").appendTo('.main--interview__content--wrap ul');
+            first_view();
+        })
+    }*/
+
+    function leftmove() {
+        $(".main--interview__content--wrap ul li:last-child").prependTo('.main--interview__content--wrap ul');
+        first_view();
+    }
+    function rightmove() {
+        $(".main--interview__content--wrap ul li:first-child").appendTo('.main--interview__content--wrap ul');
+        first_view();
+    }
+    $(".itv_left").click(function () {
+        leftmove();
+    })
+    $(".itv_right").click(function () {
+        rightmove();
+    })
+
+
+    //마우스 호버시 이미지 변경
+    $(".itv_left").mouseover(function () {
+        $(this).attr("src",$(this).attr('src').replace("default","hover"));
+    })
+    $(".itv_right").mouseover(function () {
+        $(this).attr("src",$(this).attr('src').replace("default","hover"));
+    })
+    //마우스 leave시 이미지 원복
+    $(".itv_left").mouseleave(function () {
+        $(this).attr("src",$(this).attr('src').replace("hover","default"));
+    })
+    $(".itv_right").mouseleave(function () {
+        $(this).attr("src",$(this).attr('src').replace("hover","default"));
+    })
+    //마우스 클릭시 위치 변경
+    $(".itv_left").mousedown(function () {
+        $(this).css("margin-top","5px")
+    })
+    $(".itv_right").mousedown(function () {
+        $(this).css("margin-top","5px")
+    })
+    //마우스 클릭완료시 위치 원복
+    $(".itv_left").mouseup(function () {
+        $(this).css("margin-top","0")
+    })
+    $(".itv_right").mouseup(function () {
+        $(this).css("margin-top","0")
+    })
+
+    $(".main--interview--wrap").on("swipeleft" , function () {
+        leftmove();
+    });
+    $(".main--interview--wrap").on("swiperight" , function () {
+        rightmove();
+    });
+
+
+
+
+
+    //페이지 로드되었을때 실행
+    randomView();
+    first_view();
+})

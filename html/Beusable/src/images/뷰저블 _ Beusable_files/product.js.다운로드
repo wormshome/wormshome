@@ -1,0 +1,281 @@
+// JavaScript Document
+
+$(document).ready(function(){
+
+	var pathname = window.location.pathname;
+	var ua = navigator.userAgent;
+	// ie 혹은 firefox 인지 변수
+	var ie = false, ff = false, cr = false;
+
+	var $body = $('body');
+	$body.attr("data-useragent",ua);
+
+	if(ua.indexOf('Windows') > -1){
+		$body.addClass('window');
+		if(ua.indexOf('MSIE') > -1 || ua.indexOf('Trident/') > -1){
+			$body.addClass('ie');
+			ie = true;
+		}
+	}
+	if(ua.indexOf('Firefox') > -1){
+		ff = true;
+		$body.addClass('firefox');
+	}
+    if(ua.indexOf('Chrome') > -1){
+        cr = true;
+        $body.addClass('chrome');
+    }
+
+	$header = $('.header_wrap');
+
+    if(pathname == '/' && ((ie || ff || cr) ? document.documentElement.scrollTop : document.body.scrollTop) > 2 && !$header.hasClass('shadow') ){
+        $header.addClass('shadow');
+    }
+
+    var scrolling = (function () {
+        if(ie || ff || cr){
+        	return function () {
+                if(document.documentElement.scrollTop > 2 && !$header.hasClass('shadow') ){
+                    $header.addClass('shadow');
+                } else if(document.documentElement.scrollTop < 2 && $header.hasClass('shadow')){
+                    $header.removeClass('shadow');
+                }
+            }
+        } else {
+        	return function () {
+				if(document.body.scrollTop > 2 && !$header.hasClass('shadow') ){
+					$header.addClass('shadow');
+                } else if(document.body.scrollTop < 2 && $header.hasClass('shadow')){
+                    $header.removeClass('shadow');
+                }
+            }
+		}
+    })();
+
+    var scrolling_options = (function () {
+        if(ie || ff || cr){
+            return function () {
+                if(document.documentElement.scrollTop > 2 && !$header.hasClass('hide_options') ){
+                    $header.addClass('hide_options');
+                } else if(document.documentElement.scrollTop < 2 && $header.hasClass('hide_options')){
+                    $header.removeClass('hide_options');
+                }
+            }
+        } else {
+            return function () {
+                if(document.body.scrollTop > 2 && !$header.hasClass('hide_options') ){
+                    $header.addClass('hide_options');
+                } else if(document.body.scrollTop < 2 && $header.hasClass('hide_options')){
+                    $header.removeClass('hide_options');
+                }
+            }
+        }
+    })();
+
+	if(pathname == '/' || pathname == '/b_hero'){
+		$(window).on('scroll', scrolling);
+	} else {
+        $header.addClass('shadow');
+	}
+
+    // $(window).on('scroll', scrolling_options);
+
+	$(".product_function .tab_area .item").click(function(){
+		itemOn($(this));
+		var targetName = $(this).attr("data-target");
+		$(this).parent().parent().find(".description_content").hide();
+		$(this).parent().parent().find(".description_content[data-view="+targetName+"]").show();
+	});
+
+	$(".product_detail .tab_area .item").click(function(){
+		itemOn($(this));
+		var targetName = $(this).attr("data-target");
+		$(this).parent().parent().parent().parent().find(".image_group").find("img").hide();
+		$(this).parent().parent().parent().parent().find(".image_group").find("img[data-view="+targetName+"]").show();
+	});
+
+	$(".charge_plan .tab_area .item").click(function(){
+		itemOn($(this));
+		var targetName = $(this).attr("data-target");
+		$(this).parent().parent().find(".period_plan").hide();
+		$(this).parent().parent().find(".period_plan[data-view="+targetName+"]").show();
+	});
+
+	$(".support_area .tab_area .item").click(function(){
+		itemOn($(this));
+		var targetName = $(this).attr("data-target");
+		$(this).parent().parent().find(".folder_set").hide();
+		$(this).parent().parent().find(".folder_set[data-view="+targetName+"]").show();
+	});
+
+	$(".support_area .folder_set .item").click(function(){
+		var swichClassOn = $(this).hasClass("on");
+		if(swichClassOn == false){
+			$(this).addClass("on");
+		} else {
+			$(this).removeClass("on");
+		};
+	});
+
+	$('#vertical_btn').on('click', function (e) {
+		$('#vertical_rythm').toggleClass('show');
+	})
+
+
+    var $menu = $('.header .menu_area');
+	$('#gnb__burger').on('click touch', function () {
+		$menu.toggleClass('on');
+	});
+
+    if(pathname == '/why'){
+		$menu.find('.item.normal:first-child').addClass('on');
+    } else if( pathname == '/pricing'){
+        $menu.find('.item.normal:nth-child(3)').addClass('on');
+	} else if( pathname == '/contact'){
+        $menu.find('.item.normal:nth-child(4)').addClass('on');
+	} else if(pathname == '/ux_heatmap' || pathname == '/reporting' || pathname == '/analytics' || pathname == '/gaze' || pathname == '/cta' || pathname == '/comparing' || pathname == '/stream' ){
+        $menu.find('.item.normal:nth-child(2)').addClass('on');
+	}
+
+	$product_item = $('.header .product__list');
+	$menu.find('.item.product').on('click', function () {
+		$product_item.toggleClass('slide_toggle');
+    });
+
+	// 아이패드 대응 스크립트
+    $menu.find('.item.product').on('touchstart', function () {
+        $product_item.addClass('touch');
+    });
+    $(document).on('touchstart', function () {
+        $product_item.removeClass('touch');
+    });
+
+    var $download = $('#logo_down');
+    if($download[0]){
+        var downloadSupport = 'download' in $download[0];
+	}
+    if(!downloadSupport && $download){
+        $download.on('click', function (e) {
+            window.location.assign('https://www.beusable.net/img/logos.zip')
+        });
+	}
+
+	// 팝업 세팅
+    // 2017년 5월 7일 까지 띄움
+    var popup_expire = new Date(2017, 8, 25);
+    var now = new Date();
+    if($.cookie && popup_expire > now && (window.location.pathname === '/' || window.location.pathname === '/c_hero') ){
+        var cookie_option = {'expires': 17, 'path': '/'};
+        if($.cookie('beu_popup') === undefined){
+            $.cookie('beu_popup', 'true',cookie_option);
+        }
+        if($.cookie('beu_popup') !== 'false'){
+            $('#main--popup').addClass('on');
+        }
+        $('#close_popup').on('click', function (e) {
+            $('#main--popup').hide();
+        });
+        $('#never_again').on('change', function (e) {
+            if(this.checked){
+                $.cookie('beu_popup', 'false', cookie_option);
+            } else {
+                $.cookie('beu_popup', 'true', cookie_option);
+			}
+        });
+	}
+
+    var lang = $.cookie('beu_lang');
+    var $ko = $('#gotoKorean'), $ja = $('#gotoJapanese'),$en = $('#gotoEnglish');
+    var $m_ko = $('#m_gotoKorean'), $m_ja = $('#m_gotoJapanese'),$m_en = $('#m_gotoEnglish');
+    var $selectedLang = $('.header_wrap .selected_language');
+    var $html = $('html');
+    if(lang === 'ko'){
+        $ko.addClass('on');
+        $('body').addClass('ko');
+        $m_ko.addClass('on');
+        $selectedLang.text('한국어');
+        $html.attr('lang', 'ko');
+    } else if(lang === 'ja'){
+        $ja.addClass('on');
+        $m_ja.addClass('on');
+        $('body').addClass('ja');
+        $selectedLang.text('日本語');
+        $html.attr('lang', 'ja');
+    } else if(lang === 'en') {
+        $('body').addClass('en');
+        $en.addClass('on');
+        $m_en.addClass('on');
+        $selectedLang.text('English');
+        $html.attr('lang', 'en');
+    }
+    $ko.on('click', function (e) {
+        $.cookie('beu_lang', 'ko', { expires: 365, path: '/'});
+        window.location.reload(true);
+    });
+    $en.on('click', function (e) {
+        $.cookie('beu_lang', 'en', { expires: 365, path: '/'});
+        window.location.reload(true);
+    });
+    $ja.on('click', function (e) {
+        $.cookie('beu_lang', 'ja', { expires: 365, path: '/'});
+        window.location.reload(true);
+    });
+    $m_ko.on('click', function (e) {
+        $.cookie('beu_lang', 'ko', { expires: 365, path: '/'});
+        window.location.reload(true);
+    });
+    $m_en.on('click', function (e) {
+        $.cookie('beu_lang', 'en', { expires: 365, path: '/'});
+        window.location.reload(true);
+    });
+    $m_ja.on('click', function (e) {
+        $.cookie('beu_lang', 'ja', { expires: 365, path: '/'});
+        window.location.reload(true);
+    });
+
+    $video_container = $('.main--video--wrap .video--container');
+    if(pathname == '/'){
+        $video_container.on('click', function (e) {
+            $video_container.addClass('play');
+            if(lang === 'ko'){
+                $video_container.find('iframe').attr('src', 'https://www.youtube.com/embed/uCPxXCXEodI?rel=0&showinfo=0&autoplay=1&vq=hd720&hd=1');
+            } else if(lang === 'ja'){
+                $video_container.find('iframe').attr('src', 'https://www.youtube.com/embed/-IQQ1BayKQA?rel=0&showinfo=0&autoplay=1&vq=hd720&hd=1');
+            } else {
+                $video_container.find('iframe').attr('src', 'https://www.youtube.com/embed/xP5peauKUIM?rel=0&showinfo=0&autoplay=1&vq=hd720&hd=1');
+            }
+
+        })
+    } else if(pathname === '/pricing'){
+        $('.gotoDashboard').on('click', function (e) {
+            var text = {
+                ko: '7월 31일까지 가입하시면 한 달 간 뷰저블을 무료로 사용하실 수 있습니다.',
+                ja: ' 7月31日までに登録すると、一ヶ月間ビューザブルを無料でご利用いただけます。',
+                en: 'Sign up by July 31, get a free access to \'Beusable\' for a month.'
+            }
+
+            var alert_expired = new Date(2017, 7,1);
+            var p_now = new Date();
+
+            if(alert_expired > p_now){
+                e.preventDefault();
+                alert(text[lang]);
+            } else {
+                // window.location.href = '/tool/planning';
+            }
+        })
+    } else if(pathname === '/session'){
+        $carousel = $('.session--features .session__carousel');
+        $desktop = $('.session--features .navigator.desktop');
+        $phone = $('.session--features .navigator.phone');
+
+        $desktop.on('click', function () {
+           $carousel.removeClass('phone').addClass('desktop');
+           $phone.removeClass('on').prev().addClass('on');
+        });
+        $phone.on('click', function () {
+            $carousel.removeClass('desktop').addClass('phone');
+            $desktop.removeClass('on').next().addClass('on');
+        });
+    }
+});

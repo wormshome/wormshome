@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<!--[if IE 6]><html lang="ko-KR" class="lt-ie10 lt-ie9 lt-ie8 ie6"><![endif]-->
+<!--[if IE 7]><html lang="ko-KR" class="lt-ie10 lt-ie9 lt-ie8 ie7"><![endif]-->
+<!--[if IE 8]><html lang="ko-KR" class="lt-ie10 lt-ie9 ie8"><![endif]-->
+<!--[if IE 9]><html lang="ko-KR" class="lt-ie10 ie9"><![endif]-->
+<!--[if !IE]<!--><html lang="ko"><!--<![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="뷰저블 &#124; Beusable">
+    <!--<meta property="og:description" content="UX 분석이 쉬워집니다!">-->
+    <meta property="og:description" content="Beusable(뷰저블)은 UX 데이터분석 올인원 플랫폼으로 9가지 특화된 전문 분석 기능을 갖추고 있습니다. UX Heatmaps, Session Reports, AB Test, Funnel, Comparing as Referers, User Analytics, Activity Stream, Segmenting as CTA">
+    <meta property="og:image" content="https://www.beusable.net/img/og_image.jpeg">
+    <meta property="og:url" content="https://www.beusable.net">
+
+    <meta name="description" content="Beusable(뷰저블)은 UX 데이터 분석 올인원 플랫폼으로 9가지 특화된 전문 분석 기능을 갖추고 있습니다. UX Heatmaps, Session Reports, AB Test, Funnel, Comparing as Referers, User Analytics, Activity Stream, Segmenting as CTA">
+    <meta name="keywords" content="뷰저블, 포그리트, 시멘틱마인, 4girt, 히트맵분석, 히트맵, UX분석, UX컨설팅, UX데이터분석, AB테스트, 퍼널, 세션리플레이, UX디자인, 데이터분석">
+
+    <link rel="alternate"  href="http://www.beusable.com/m">
+
+    <title>뷰저블 | Beusable</title>
+    <link rel="shortcut icon" type="image/png" href="/img/favicon/beuLogo.ico"/>
+    <!--<link rel="stylesheet" type="text/css" media="all" href="css/style.css">-->
+
+
+    <link rel="stylesheet" type="text/css" media="all" href="css/style_v2.css">
+
+    
+        <link rel="stylesheet" type="text/css" media="all" href="css/dist/modules.min.css">
+    
+
+</head>
+
+<body data-useragent="">
+
+<!-- header -->
+<div class="header_wrap">
+    <!--<div class="gnb_options">-->
+        <!--<div class="container clreafix">-->
+            <!--<div class="languages&#45;&#45;wrap">-->
+                <!--<button class="selected_language"></button>-->
+                <!--<span class="sprite_icon"></span>-->
+                <!--<ul class="language_list">-->
+                    <!--<li id="gotoKorean">한국어</li>-->
+                    <!--<li id="gotoEnglish">English</li>-->
+                    <!--<li id="gotoJapanese" class="ja">日本語</li>-->
+                <!--</ul>-->
+            <!--</div>-->
+            <!--<a href="https://brunch.co.kr/@beusable" target="_blank" class="goto gotoBlog">Blog</a>-->
+            <!--<a href="https://www.facebook.com/beusable" target="_blank" class="goto gotoFacebook">Facebook</a>-->
+        <!--</div>-->
+    <!--</div>-->
+    <div class="header container">
+
+        <h1 class="logo">
+            <a href="/">
+                <svg width="143px" height="33px" viewBox="1 3 143 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+                    <desc>Created with Sketch.</desc>
+                    <defs>
+                        <path d="M114,2.00585866 C114,0.898053512 114.899898,0 115.991244,0 L140.008756,0 C141.10849,0 142,0.897060126 142,2.00585866 L142,14 L115.991244,14 C114.89151,14 114,13.1029399 114,11.9941413 L114,2.00585866 Z" id="path-1"></path>
+                        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+                            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+                        </filter>
+                    </defs>
+                    <!--<g id="Group-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(1.000000, 3.000000)">-->
+                        <!--<polygon id="beta_bubble_arrow" points="132.642857 13.9642857 141.642857 13.9642857 132.642857 17.5"></polygon>-->
+                        <!--<g id="Rectangle-9">-->
+                            <!--<use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>-->
+                            <!--<use id="beta_bubble" fill-rule="evenodd" xlink:href="#path-1"></use>-->
+                        <!--</g>-->
+                        <!--<path class="beta_sign" id="Fill-b-1" d="M120.916031,7.24397163 L120.916031,10.0808511 C121.044275,10.1035461 121.171501,10.1217021 121.29771,10.1375887 C121.422901,10.1523404 121.547074,10.1591489 121.669211,10.1591489 C121.858524,10.1591489 122.038677,10.1375887 122.208651,10.0921986 C122.378626,10.0468085 122.526209,9.97078014 122.651399,9.86524823 C122.77659,9.75971631 122.875318,9.61333333 122.946565,9.42836879 C123.017812,9.24340426 123.053435,9.0141844 123.053435,8.74070922 C123.053435,8.27205674 122.93944,7.90553191 122.712468,7.64113475 C122.485496,7.37560284 122.13028,7.24397163 121.648855,7.24397163 L120.916031,7.24397163 Z M120.916031,6.4258156 L121.547074,6.4258156 C122.387786,6.4258156 122.80916,6.00255319 122.80916,5.15602837 C122.80916,4.89163121 122.773537,4.67262411 122.70229,4.5035461 C122.631043,4.33333333 122.537405,4.20056738 122.422392,4.10524823 C122.306361,4.01106383 122.173028,3.94524823 122.020356,3.90780142 C121.867684,3.86921986 121.705852,3.85106383 121.536896,3.85106383 C121.435115,3.85106383 121.331298,3.85560284 121.226463,3.86241135 C121.120611,3.86921986 121.017812,3.88056738 120.916031,3.8964539 L120.916031,6.4258156 Z M120,3.1929078 C120.23715,3.13276596 120.479389,3.08510638 120.727735,3.05106383 C120.975064,3.01588652 121.221374,3 121.465649,3 C121.770992,3 122.061069,3.03177305 122.335878,3.0964539 C122.610687,3.16 122.852926,3.27007092 123.063613,3.42553191 C123.273282,3.57985816 123.441221,3.78411348 123.56743,4.03829787 C123.692621,4.29134752 123.755725,4.60794326 123.755725,4.9858156 C123.755725,5.45446809 123.667176,5.83914894 123.491094,6.1364539 C123.313995,6.43602837 123.087023,6.65730496 122.80916,6.80028369 C123.155216,6.95234043 123.440204,7.18269504 123.664122,7.49361702 C123.888041,7.80340426 124,8.23120567 124,8.77588652 C124,9.18439716 123.939949,9.5293617 123.821883,9.80851064 C123.702799,10.0887943 123.53486,10.3168794 123.318066,10.4950355 C123.100254,10.6720567 122.840712,10.8014184 122.53944,10.8808511 C122.23715,10.9591489 121.906361,11 121.547074,11 C121.308906,11 121.061578,10.9841135 120.804071,10.9546099 C120.545547,10.9239716 120.277863,10.8785816 120,10.817305 L120,3.1929078 Z"></path>-->
+                        <!--<path class="beta_sign" id="Fill-b-3" d="M127.071006,5.7939735 C126.731361,5.7939735 126.485207,5.95080777 126.331361,6.26338718 C126.177515,6.57487747 126.085207,6.9931022 126.053254,7.51479397 L127.934911,7.51479397 C127.934911,6.98547831 127.87574,6.56616446 127.757396,6.25794155 C127.639053,5.94971864 127.409467,5.7939735 127.071006,5.7939735 L127.071006,5.7939735 Z M126.04142,8.27718279 C126.048521,8.55382102 126.076923,8.80649846 126.12426,9.0352151 C126.171598,9.26393175 126.248521,9.46324197 126.35503,9.63314576 C126.461538,9.80413868 126.60355,9.93701216 126.781065,10.0317662 C126.95858,10.1265202 127.184615,10.1733527 127.461538,10.1733527 C127.689941,10.1733527 127.900592,10.141768 128.094675,10.0807769 C128.287574,10.0186967 128.427219,9.96532946 128.514793,9.92176439 L128.704142,10.6732619 C128.601183,10.7386095 128.429586,10.8094028 128.189349,10.8867308 C127.947929,10.9618806 127.662722,11 127.331361,11 C126.897041,11 126.532544,10.9281176 126.236686,10.7821746 C125.940828,10.6373207 125.699408,10.4347431 125.514793,10.1733527 C125.328994,9.91087312 125.197633,9.59938283 125.118343,9.23561445 C125.039053,8.8729352 125,8.47322563 125,8.038664 C125,6.98547831 125.189349,6.2154656 125.568047,5.72862588 C125.946746,5.24287529 126.447337,5 127.071006,5 C127.772781,5 128.269822,5.24287529 128.56213,5.72862588 C128.853254,6.2154656 129,6.89834816 129,7.77618443 L129,8.02123797 C129,8.10510074 128.995266,8.19005264 128.988166,8.27718279 L126.04142,8.27718279 Z"></path>-->
+                        <!--<path class="beta_sign" id="Fill-b-5" d="M131.102564,4.80346821 L132.794872,4.80346821 L132.794872,5.65895954 L131.102564,5.65895954 L131.102564,9 C131.102564,9.41618497 131.185897,9.70751445 131.352564,9.87283237 C131.519231,10.0381503 131.74359,10.1213873 132.025641,10.1213873 C132.170513,10.1213873 132.308974,10.1017341 132.442308,10.0635838 C132.574359,10.0254335 132.687179,9.97919075 132.782051,9.92485549 L133,10.7225434 C132.65,10.9075145 132.278205,11 131.884615,11 C131.252564,11 130.779487,10.8404624 130.467949,10.5202312 C130.15641,10.2 130,9.67052023 130,8.93063584 L130,3.1734104 L131.102564,3 L131.102564,4.80346821 Z"></path>-->
+                        <!--<path class="beta_sign" id="Fill-b-7" d="M134.071651,9.20688399 C134.071651,9.54234201 134.17134,9.79038427 134.370717,9.95101074 C134.570093,10.1105445 134.851713,10.1903114 135.218069,10.1903114 C135.442368,10.1903114 135.686604,10.1651794 135.953271,10.1138226 L135.953271,8.28901839 C135.70405,8.23110545 135.458567,8.20160262 135.218069,8.20160262 C135.059813,8.20160262 134.91028,8.21908578 134.76947,8.25077399 C134.62866,8.28355491 134.505296,8.33818977 134.401869,8.41467856 C134.298442,8.49226006 134.217445,8.5927882 134.158879,8.72172646 C134.100312,8.84847933 134.071651,9.01019851 134.071651,9.20688399 L134.071651,9.20688399 Z M133.560748,5.26334001 C133.776324,5.18248042 134.005607,5.11910399 134.246106,5.07102531 C134.486604,5.02403934 134.748287,5 135.031153,5 C135.611838,5 136.086604,5.15844109 136.451713,5.47532326 C136.816822,5.79220543 137,6.28610453 137,6.95592788 L137,10.7585139 C136.700935,10.8317246 136.395639,10.8896376 136.084112,10.9333455 C135.772586,10.9770534 135.46729,11 135.168224,11 C134.869159,11 134.588785,10.9661264 134.327103,10.9005646 C134.065421,10.8350027 133.837383,10.7301038 133.641745,10.5847751 C133.446106,10.4383537 133.290343,10.2547805 133.174455,10.0318703 C133.058567,9.81005281 133,9.53906392 133,9.21890366 C133,8.91950464 133.052336,8.65944272 133.155763,8.43653251 C133.25919,8.21471499 133.402492,8.02895647 133.58567,7.87925697 C133.767601,7.72955746 133.984424,7.61700965 134.233645,7.54161355 C134.482866,7.46403205 134.752025,7.42578765 135.043614,7.42578765 C135.317757,7.42578765 135.620561,7.45529048 135.953271,7.51320342 L135.953271,6.98980149 C135.953271,6.5669277 135.859813,6.27080677 135.672897,6.10362411 C135.485981,5.93644145 135.218069,5.85339647 134.869159,5.85339647 C134.677259,5.85339647 134.496573,5.86869423 134.327103,5.90256784 C134.156386,5.93425606 133.975701,5.98779822 133.785047,6.05991623 L133.560748,5.26334001 Z"></path>-->
+                        <path class="main_char" id="Fill-1"  d="M29.8999996,22.5498 C29.8799996,22.1708 29.8149996,21.7998 29.7049996,21.4408 C29.5949996,21.0798 29.4239996,20.7608 29.1949996,20.4808 C28.9649996,20.1998 28.6739996,19.9708 28.3249996,19.7898 C27.9749996,19.6108 27.5399996,19.5208 27.0199996,19.5208 C26.5199996,19.5208 26.0899996,19.6058 25.7299996,19.7758 C25.3699996,19.9458 25.0699996,20.1708 24.8299996,20.4498 C24.5899996,20.7308 24.4049996,21.0558 24.2749996,21.4248 C24.1449996,21.7958 24.0499996,22.1708 23.9899996,22.5498 L29.8999996,22.5498 Z M19.3999996,24.2608 C19.3999996,22.8608 19.6139996,21.6358 20.0449996,20.5848 C20.4749996,19.5348 21.0399996,18.6598 21.7399996,17.9598 C22.4399996,17.2608 23.2449996,16.7308 24.1549996,16.3698 C25.0649996,16.0108 25.9999996,15.8298 26.9599996,15.8298 C29.1999996,15.8298 30.9699996,16.5158 32.2699996,17.8858 C33.5699996,19.2558 34.2199996,21.2708 34.2199996,23.9308 C34.2199996,24.1908 34.2099996,24.4758 34.1899996,24.7848 C34.1699996,25.0958 34.1499996,25.3698 34.1299996,25.6108 L23.9899996,25.6108 C24.0899996,26.5298 24.5199996,27.2608 25.2799996,27.7998 C26.0399996,28.3398 27.0599996,28.6108 28.3399996,28.6108 C29.1599996,28.6108 29.9639996,28.5348 30.7549996,28.3858 C31.5449996,28.2358 32.1899996,28.0508 32.6899996,27.8298 L33.2899996,31.4598 C33.0499996,31.5798 32.7299996,31.6998 32.3299996,31.8208 C31.9299996,31.9408 31.4849996,32.0448 30.9949996,32.1358 C30.5039996,32.2258 29.9799996,32.2998 29.4199996,32.3608 C28.8599996,32.4198 28.2989996,32.4498 27.7399996,32.4498 C26.3189996,32.4498 25.0849996,32.2398 24.0349996,31.8208 C22.9849996,31.4008 22.1149996,30.8248 21.4249996,30.0958 C20.7349996,29.3648 20.2249996,28.5008 19.8949996,27.4998 C19.5649996,26.4998 19.3999996,25.4208 19.3999996,24.2608 L19.3999996,24.2608 Z"></path>
+                        <path class="main_char" id="Fill-3"  d="M51.1396996,31.4902 C50.3796996,31.7112 49.3996996,31.9152 48.1996996,32.1052 C46.9996996,32.2952 45.7396996,32.3902 44.4196996,32.3902 C43.0796996,32.3902 41.9646996,32.2102 41.0746996,31.8502 C40.1846996,31.4902 39.4796996,30.9852 38.9596996,30.3352 C38.4396996,29.6852 38.0696996,28.9102 37.8496996,28.0112 C37.6296996,27.1102 37.5196996,26.1202 37.5196996,25.0402 L37.5196996,16.2502 L41.9896996,16.2502 L41.9896996,24.5002 C41.9896996,25.9402 42.1796996,26.9802 42.5596996,27.6202 C42.9396996,28.2612 43.6496996,28.5802 44.6896996,28.5802 C45.0096996,28.5802 45.3496996,28.5652 45.7096996,28.5352 C46.0696996,28.5052 46.3896996,28.4702 46.6696996,28.4302 L46.6696996,16.2502 L51.1396996,16.2502 L51.1396996,31.4902 Z"></path>
+                        <path class="main_char" id="Fill-5" d="M59.8691996,28.8203 C60.6891996,28.8203 61.2691996,28.7403 61.6091996,28.5803 C61.9491996,28.4213 62.1191996,28.1103 62.1191996,27.6503 C62.1191996,27.2903 61.8991996,26.9753 61.4591996,26.7053 C61.0191996,26.4353 60.3491996,26.1313 59.4491996,25.7903 C58.7491996,25.5303 58.1141996,25.2603 57.5441996,24.9803 C56.9741996,24.7003 56.4891996,24.3653 56.0891996,23.9753 C55.6891996,23.5853 55.3791996,23.1203 55.1591996,22.5803 C54.9391996,22.0403 54.8291996,21.3903 54.8291996,20.6303 C54.8291996,19.1503 55.3791996,17.9803 56.4791996,17.1203 C57.5791996,16.2603 59.0891996,15.8303 61.0091996,15.8303 C61.9691996,15.8303 62.8891996,15.9163 63.7691996,16.0853 C64.6491996,16.2563 65.3491996,16.4403 65.8691996,16.6403 L65.0891996,20.1203 C64.5691996,19.9403 64.0041996,19.7803 63.3941996,19.6403 C62.7841996,19.5013 62.0991996,19.4303 61.3391996,19.4303 C59.9391996,19.4303 59.2391996,19.8203 59.2391996,20.6003 C59.2391996,20.7803 59.2691996,20.9403 59.3291996,21.0803 C59.3891996,21.2203 59.5091996,21.3553 59.6891996,21.4853 C59.8691996,21.6153 60.1141996,21.7563 60.4241996,21.9073 C60.7341996,22.0583 61.1291996,22.2243 61.6091996,22.4063 C62.5891996,22.7693 63.3991996,23.1273 64.0391996,23.4793 C64.6791996,23.8333 65.1841996,24.2143 65.5541996,24.6233 C65.9241996,25.0323 66.1841996,25.4863 66.3341996,25.9843 C66.4841996,26.4833 66.5591996,27.0623 66.5591996,27.7203 C66.5591996,29.2773 65.9741996,30.4553 64.8041996,31.2533 C63.6341996,32.0503 61.9791996,32.4503 59.8391996,32.4503 C58.4391996,32.4503 57.2741996,32.3303 56.3441996,32.0903 C55.4141996,31.8503 54.7691996,31.6503 54.4091996,31.4903 L55.1591996,27.8603 C55.9191996,28.1603 56.6991996,28.3953 57.4991996,28.5653 C58.2991996,28.7353 59.0891996,28.8203 59.8691996,28.8203"></path>
+                        <path class="main_char" id="Fill-8" d="M75.9189996,28.9102 C76.3589996,28.9102 76.7789996,28.9002 77.1789996,28.8802 C77.5789996,28.8602 77.8989996,28.8312 78.1389996,28.7902 L78.1389996,25.4002 C77.9589996,25.3602 77.6889996,25.3202 77.3289996,25.2802 C76.9689996,25.2402 76.6389996,25.2212 76.3389996,25.2212 C75.9189996,25.2212 75.5239996,25.2452 75.1539996,25.2952 C74.7839996,25.3462 74.4589996,25.4402 74.1789996,25.5802 C73.8989996,25.7212 73.6789996,25.9102 73.5189996,26.1502 C73.3589996,26.3902 73.2789996,26.6902 73.2789996,27.0502 C73.2789996,27.7512 73.5139996,28.2352 73.9839996,28.5052 C74.4539996,28.7752 75.0989996,28.9102 75.9189996,28.9102 M75.5589996,15.8302 C76.8789996,15.8302 77.9789996,15.9802 78.8589996,16.2802 C79.7389996,16.5802 80.4439996,17.0112 80.9739996,17.5702 C81.5039996,18.1312 81.8789996,18.8102 82.0989996,19.6102 C82.3189996,20.4102 82.4289996,21.3012 82.4289996,22.2802 L82.4289996,31.5802 C81.7889996,31.7212 80.8989996,31.8862 79.7589996,32.0752 C78.6189996,32.2642 77.2389996,32.3602 75.6189996,32.3602 C74.5989996,32.3602 73.6739996,32.2702 72.8439996,32.0902 C72.0139996,31.9102 71.2989996,31.6152 70.6989996,31.2052 C70.0989996,30.7962 69.6389996,30.2612 69.3189996,29.6002 C68.9989996,28.9402 68.8389996,28.1302 68.8389996,27.1702 C68.8389996,26.2512 69.0239996,25.4712 69.3939996,24.8302 C69.7639996,24.1902 70.2589996,23.6812 70.8789996,23.3002 C71.4989996,22.9212 72.2089996,22.6452 73.0089996,22.4752 C73.8089996,22.3062 74.6389996,22.2212 75.4989996,22.2212 C76.0789996,22.2212 76.5939996,22.2452 77.0439996,22.2952 C77.4939996,22.3462 77.8589996,22.4102 78.1389996,22.4902 L78.1389996,22.0702 C78.1389996,21.3102 77.9089996,20.7002 77.4489996,20.2402 C76.9889996,19.7802 76.1889996,19.5502 75.0489996,19.5502 C74.2889996,19.5502 73.5389996,19.6052 72.7989996,19.7152 C72.0589996,19.8252 71.4189996,19.9802 70.8789996,20.1812 L70.3089996,16.5802 C70.5689996,16.5012 70.8939996,16.4152 71.2839996,16.3252 C71.6739996,16.2352 72.0989996,16.1552 72.5589996,16.0852 C73.0189996,16.0152 73.5039996,15.9552 74.0139996,15.9052 C74.5239996,15.8552 75.0389996,15.8302 75.5589996,15.8302"></path>
+                        <path class="main_char" id="Fill-10" d="M96.5889996,24.0205 C96.5889996,21.1405 95.5289996,19.7005 93.4089996,19.7005 C92.9489996,19.7005 92.4939996,19.7605 92.0439996,19.8795 C91.5939996,19.9995 91.2289996,20.1505 90.9489996,20.3305 L90.9489996,28.4595 C91.1689996,28.5005 91.4489996,28.5355 91.7889996,28.5655 C92.1289996,28.5955 92.4989996,28.6105 92.8989996,28.6105 C94.1189996,28.6105 95.0389996,28.1905 95.6589996,27.3505 C96.2789996,26.5105 96.5889996,25.4005 96.5889996,24.0205 M101.149,24.1405 C101.149,25.4005 100.964,26.5405 100.594,27.5605 C100.224,28.5805 99.6889996,29.4505 98.9889996,30.1695 C98.2889996,30.8905 97.4289996,31.4455 96.4089996,31.8345 C95.3889996,32.2255 94.2289996,32.4195 92.9289996,32.4195 C92.3889996,32.4195 91.8239996,32.3945 91.2339996,32.3455 C90.6439996,32.2945 90.0639996,32.2295 89.4939996,32.1505 C88.9239996,32.0705 88.3789996,31.9755 87.8589996,31.8655 C87.3389996,31.7555 86.8789996,31.6405 86.4789996,31.5205 L86.4789996,9.4705 L90.9489996,8.7495 L90.9489996,16.6105 C91.4489996,16.3905 91.9689996,16.2205 92.5089996,16.1005 C93.0489996,15.9805 93.6289996,15.9195 94.2489996,15.9195 C95.3689996,15.9195 96.3589996,16.1155 97.2189996,16.5045 C98.0789996,16.8955 98.7989996,17.4505 99.3789996,18.1695 C99.9589996,18.8905 100.399,19.7555 100.699,20.7655 C100.999,21.7755 101.149,22.9005 101.149,24.1405"></path>
+                        <path class="main_char" id="Fill-13" d="M110.8985,32.3301 C109.5985,32.3101 108.5435,32.1701 107.7335,31.9101 C106.9235,31.6501 106.2835,31.2851 105.8135,30.8151 C105.3435,30.3461 105.0235,29.7751 104.8535,29.1051 C104.6835,28.4351 104.5985,27.6811 104.5985,26.8401 L104.5985,9.4711 L109.0685,8.7501 L109.0685,25.9401 C109.0685,26.3411 109.0985,26.7001 109.1585,27.0201 C109.2185,27.3411 109.3335,27.6101 109.5035,27.8301 C109.6735,28.0511 109.9185,28.2301 110.2385,28.3701 C110.5585,28.5111 110.9885,28.6011 111.5285,28.6411 L110.8985,32.3301 Z"></path>
+                        <path class="main_char" id="Fill-16" d="M123.8287,22.5498 C123.8087,22.1708 123.7437,21.7998 123.6337,21.4408 C123.5237,21.0798 123.3527,20.7608 123.1237,20.4808 C122.8937,20.1998 122.6027,19.9708 122.2537,19.7898 C121.9037,19.6108 121.4687,19.5208 120.9487,19.5208 C120.4487,19.5208 120.0187,19.6058 119.6587,19.7758 C119.2987,19.9458 118.9987,20.1708 118.7587,20.4498 C118.5187,20.7308 118.3337,21.0558 118.2037,21.4248 C118.0737,21.7958 117.9787,22.1708 117.9187,22.5498 L123.8287,22.5498 Z M113.3287,24.2608 C113.3287,22.8608 113.5427,21.6358 113.9737,20.5848 C114.4037,19.5348 114.9687,18.6598 115.6687,17.9598 C116.3687,17.2608 117.1737,16.7308 118.0837,16.3698 C118.9937,16.0108 119.9287,15.8298 120.8887,15.8298 C123.1287,15.8298 124.8987,16.5158 126.1987,17.8858 C127.4987,19.2558 128.1487,21.2708 128.1487,23.9308 C128.1487,24.1908 128.1387,24.4758 128.1187,24.7848 C128.0987,25.0958 128.0787,25.3698 128.0587,25.6108 L117.9187,25.6108 C118.0187,26.5298 118.4487,27.2608 119.2087,27.7998 C119.9687,28.3398 120.9887,28.6108 122.2687,28.6108 C123.0887,28.6108 123.8927,28.5348 124.6837,28.3858 C125.4737,28.2358 126.1187,28.0508 126.6187,27.8298 L127.2187,31.4598 C126.9787,31.5798 126.6587,31.6998 126.2587,31.8208 C125.8587,31.9408 125.4137,32.0448 124.9237,32.1358 C124.4327,32.2258 123.9087,32.2998 123.3487,32.3608 C122.7887,32.4198 122.2277,32.4498 121.6687,32.4498 C120.2477,32.4498 119.0137,32.2398 117.9637,31.8208 C116.9137,31.4008 116.0437,30.8248 115.3537,30.0958 C114.6637,29.3648 114.1537,28.5008 113.8237,27.4998 C113.4937,26.4998 113.3287,25.4208 113.3287,24.2608 L113.3287,24.2608 Z"></path>
+                        <path class="main_char" id="Fill-0" d="M11.3361875,29.0901563 C9.5327375,29.0901563 8.0708375,27.6282563 8.0708375,25.8248063 C8.0708375,25.3214188 8.1849625,24.8447063 8.3884625,24.4188688 L4.522925,21.9013813 C4.3209375,22.0496063 4.072475,22.1382938 3.8025625,22.1382938 C3.1288125,22.1382938 2.582525,21.5921438 2.582525,20.9182563 C2.582525,20.2445063 3.1288125,19.6982188 3.8025625,19.6982188 C3.9752625,19.6982188 4.1391625,19.7345188 4.288075,19.7992813 L6.86015,17.1471813 C6.6429,16.8222688 6.5157125,16.4319063 6.5157125,16.0117063 C6.5157125,14.8821438 7.4314625,13.9663938 8.5611625,13.9663938 C9.690725,13.9663938 10.606475,14.8821438 10.606475,16.0117063 C10.606475,17.1414063 9.690725,18.0570188 8.5611625,18.0570188 C8.1635125,18.0570188 7.7935,17.9417938 7.47945,17.7454438 L4.9055875,20.3994688 C4.9798375,20.5570438 5.0226,20.7324938 5.0226,20.9182563 C5.0226,21.0083188 5.01215,21.0957688 4.993725,21.1801938 L8.8595375,23.6979563 C9.4584875,23.0012438 10.3455,22.5594563 11.3361875,22.5594563 C13.1396375,22.5594563 14.6015375,24.0213563 14.6015375,25.8248063 C14.6015375,27.6282563 13.1396375,29.0901563 11.3361875,29.0901563 M13.0112125,20.0069063 C13.9302625,18.9360563 14.498825,17.5941938 14.498825,16.0723438 C14.498825,12.6914938 11.7701375,9.99993125 8.3892875,9.99993125 L0.8754625,9.99993125 C0.39985,9.99993125 0,10.2972063 0,10.7729563 L0,19.7147188 L0,22.1446188 L0,31.0108938 C0,31.4865063 0.39985,31.9999313 0.8754625,31.9999313 L11.2167,31.9999313 C14.5421375,31.9999313 17.2381,29.2401687 17.2381,25.9145938 C17.2381,23.1864563 15.476725,20.7975313 13.0112125,20.0069063"></path>
+                    </g>
+                </svg>
+            </a>
+        </h1>
+
+        <ul class="menu_area clearfix">
+            <li class="item normal"><a href="/why">Why Beusable?</a></li>
+            <li class="item normal product" onClick="return true">
+                <a class="ctgr">Features</a>
+                <ul class="product__list">
+                    <h6 class="product__list__title minor-minor">기능소개 | <span class="list__title__desc">UX 분석을 보다 쉽게 하기 위한 기능들 입니다.</span></h6>
+                    <li class="row">
+                        <div class="product__item col-sm-6">
+                            <a href="/ux_heatmap">
+                                <span class="gnb-icon ux-heatmap"><img src="/img/ux-heatmaps-gnb@2x.png"></span>
+                                <span class="gnb__text-grp">
+                                    <h6 class="product__item__name minor-minor">UX Heatmaps</h6>
+                                    <p class="product__item__desc">히트맵을 통한 UX 분석</p>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="product__item col-sm-6">
+                            <a href="/reporting">
+                                <span class="gnb-icon ux-heatmap"><img src="/img/reporting-heatmaps-gnb@2x.png"></span>
+                                <span class="gnb__text-grp">
+                                    <h6 class="product__item__name minor-minor">Reporting Heatmaps</h6>
+                                    <p class="product__item__desc">히트맵 결과 및 이슈 자동 리포팅</p>
+                                </span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="row">
+                        <div class="product__item col-sm-6">
+                            <a href="/analytics">
+                                <span class="gnb-icon ux-heatmap"><img src="/img/analytics-gnb@2x.png"></span>
+                                <span class="gnb__text-grp">
+                                    <h6 class="product__item__name minor-minor">User Analytics</h6>
+                                    <p class="product__item__desc">페이지별 사용자 지표 차트 보드</p>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="product__item col-sm-6">
+                            <a href="/comparing">
+                                <span class="gnb-icon ux-heatmap"><img src="/img/comparing-referrers-gnb@2x.png"></span>
+                                <span class="gnb__text-grp">
+                                    <h6 class="product__item__name minor-minor">Comparing Referrers</h6>
+                                    <p class="product__item__desc">유입처별 사용자 UX 현황 비교</p>
+                                </span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="row">
+                        <div class="product__item col-sm-6">
+                            <a href="/cta">
+                                <span class="gnb-icon ux-heatmap"><img src="/img/cta-gnb@2x.png"></span>
+                                <span class="gnb__text-grp">
+                                    <h6 class="product__item__name minor-minor">Segmenting CTA</h6>
+                                    <p class="product__item__desc">주요 요소별 사용자 정보 그룹핑</p>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="product__item col-sm-6">
+                            <a href="/stream">
+                                <span class="gnb-icon ux-heatmap"><img src="/img/stream-gnb@2x.png"></span>
+                                <span class="gnb__text-grp">
+                                    <h6 class="product__item__name minor-minor">Activity Stream</h6>
+                                    <p class="product__item__desc">전체 사용자 탐색 현황 시뮬레이션</p>
+                                </span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="row">
+                        <div class="product__item col-sm-6">
+                            <a href="/abtest">
+                                <span class="gnb-icon ux-heatmap"><img src="/img/ab-testing-gnb@2x.png"></span>
+                                <span class="gnb__text-grp">
+                                    <h6 class="product__item__name minor-minor">A/B Testing</h6>
+                                    <p class="product__item__desc">UX개선 성과 측정</p>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="product__item col-sm-6">
+                            <a href="/funnels">
+                                <span class="gnb-icon ux-heatmap"><img src="/img/funnel-gnb@2x.png"></span>
+                                <span class="gnb__text-grp">
+                                    <h6 class="product__item__name minor-minor">Funnels</h6>
+                                    <p class="product__item__desc">단계별 이탈 현황 관리</p>
+                                </span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="row">
+                        <div class="product__item col-sm-6">
+                            <a href="/session">
+                                <span class="gnb-icon ux-heatmap"><img src="/img/session-report-gnb@2x.png"></span>
+                                <span class="gnb__text-grp">
+                                    <h6 class="product__item__name minor-minor">User Session Report</h6>
+                                    <p class="product__item__desc">개인 사용자의 탐색 현황 시뮬레이션</p>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="product__item col-sm-6">
+                            <a href="/attention">
+                                <span class="gnb-icon ux-heatmap"><img src="/img/attention-report-gnb@3x.png" class="attention-gnb-img"></span>
+                                <span class="gnb__text-grp">
+                                    <h6 class="product__item__name minor-minor">Attention Graph</h6>
+                                    <p class="product__item__desc">사용자 관심의 정도와 분포</p>
+                                </span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="item normal">
+                <a href="/pricing">Pricing</a>
+            </li>
+            <li class="item normal">
+                <a href="/contact">Contact</a>
+            </li>
+
+            <!--<a href="blog" class="item normal">Blog</a>-->
+            <!--<a href="company" class="item normal">Company</a>-->
+
+            
+            <li class="item sign"><a href="/signin">Sign in</a></li>
+            <li class="item try"><a href="/tryitforfree">Try it free</a></li>
+            
+            <li class="item normal social clearfix">
+                <p class="m_languages">Social Media : </p>
+                <a target="_blank" href="https://www.facebook.com/beusable"><img src="/img/facebook-icon@2x.png" class="social__icon social__facebook"></a>
+                <a target="_blank" href="https://brunch.co.kr/@beusable"><img src="/img/brunch-icon@2x.png"  class="social__icon social__brunch"></a>
+                <!--<a href="http://blog.naver.com/beusable"><img src="/img/naver-icon@2x.png"  class="social__icon social__naver"></a>-->
+            </li>
+            <li class="item normal social clearfix m_languages_wrap">
+                <p class="m_languages">Language : </p>
+                <a id="m_gotoKorean" href="#">
+                    <img src="/img/kr_selected.png" class="social__icon selected" alt="view site in Korean" title="Korean">
+                    <img class="off social__icon" src="/img/kr_basic.png" alt="view site in Korean" title="Korean">
+                </a>
+                <a id="m_gotoEnglish"  href="#">
+                    <img src="/img/eng_selected.png"  class="social__icon  selected" alt="view site in English" title="English">
+                    <img class="off social__icon" src="/img/eng_basic.png" alt="view site in English" title="English">
+                </a>
+                <a id="m_gotoJapanese"  href="#">
+                    <img src="/img/jap_selected.png"  class="social__icon selected">
+                    <img class="off social__icon" src="/img/jap_basic.png" alt="view site in Japanese" title="Japanese">
+                </a>
+                <!--<a href="http://blog.naver.com/beusable"><img src="/img/naver-icon@2x.png"  class="social__icon social__naver"></a>-->
+            </li>
+        </ul>
+        <a id="gnb__burger" class="hamburger"></a>
+    </div>
+</div>
+<div id="warning_old_ie">
+    <h3>본 서비스는 IE 10 버전 이상에 최적화 돼있습니다. 원활한 서비스 사용을 위해 최신 IE로 업그레이드를 권장합니다. 혹은 Chrome, Edge, Firefox 등의 최신 브라우저를 설치하여 사용해 주십시오.</h3>
+</div>
+
+<!-- //header -->
+<div class="main--hero--wrap">
+    <div class="main--hero">
+        <div class="container main--hero--text--wrap main-hero-wrap-space">
+            <h1 class="hero__title exa main-hero-text-space-one">이제 뷰저블로 결과는 물론<br/>UX의 원인과 과정까지 알아보세요!</h1>
+            <p class="hero__sub__desc major-fourth main-hero-text-space-two">뷰저블은 웹 서비스를 방문한 사용자 행태를 시각화된 데이터로 제공하여<br/>결과 이면의 원인과 과정까지 알 수 있도록 해줍니다.</p>
+            <a href="tryitforfree" class="btn main--hero--btn">Try Beusable</a>
+        </div>
+    </div>
+</div>
+
+<div class="main--client--wrap">
+    <div class="main--client">
+        <div class="container">
+
+            <div class="main--client__content--wrap clearfix">
+                <h4 class="client__insight__title">뷰저블은 대한민국 Data-Driven UX 선도 기업들과 함께 합니다.</h4>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-client-4 client__logo--wrap samsung">
+                        <img src="/img/samsung-electronics.png" alt="Samsnung Logo" width="149px">
+                    </div>
+                    <div class="col-xs-12 col-sm-client-4 client__logo--wrap cheil">
+                        <img src="/img/index_logo_cheil.png" alt="Cheil Logo" width="70px">
+                    </div>
+                    <div class="col-xs-12 col-sm-client-4 client__logo--wrap shinhan">
+                        <img src="/img/index_logo_shinhan.png" alt="Shinhan Card Logo" width="167px">
+                    </div>
+                    <!--<div class="col-xs-12 col-sm-client-4 col-sm-client-push-2 col-md-1-5 client__logo&#45;&#45;wrap shinsegae">-->
+                        <!--<img src="/img/index_logo_shinsegae.png" alt="Shinsegae Logo" width="152px">-->
+                    <!--</div>-->
+                    <!--<div class="col-xs-12 col-sm-client-4 col-md-1-5 client__logo&#45;&#45;wrap coupang">-->
+                        <!--<img src="/img/index_logo_coupang.png" alt="Coupang Logo" width="90px">-->
+                    <!--</div>-->
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="main--interview--wrap">
+    <div class="container">
+        <div class="row">
+            <div class="main--interview__content--wrap clearfix">
+                <img class="itv_left bt" src="/img/default_left_bt@3x.png">
+                <ul class="clearfix">
+                    <li class="clearfix">
+                        <div class="col-xs-none col-sm-left intrench--wrap">
+                            <img class="intrench firstlist" src="/img/index-interviewer.jpg" alt="intrench interview image">
+                        </div>
+                        <div class="col-xs-12 col-sm-right">
+                            <div class="main--interview__content">
+                                <div class="content_inner_wrap">
+                                    <p class="summary"><span class="quote_space">&ldquo;</span>뷰저블을 구글 애널리틱스와 함께 사용하니<br/>데이터 기반 의사 결정을 진행하기 수월해졌습니다!&rdquo;</p>
+                                    <a class="gotoInterview" href="https://brunch.co.kr/@beusable/37" target="_blank">인트렌치컨설팅 인터뷰 보러가기
+                                        <img class="gotoIcon" src="/img/link-icon@2x.png" alt="go to inverview link">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <div class="col-xs-none col-sm-left intrench--wrap">
+                            <img class="intrench" src="/img/index-interviewer2@2x.png" alt="intrench interview image">
+                        </div>
+                        <div class="col-xs-12 col-sm-right">
+                            <div class="main--interview__content">
+                                <div class="content_inner_wrap">
+                                    <p class="summary"><span class="quote_space">&ldquo;</span>뷰저블을 구글 애널리틱스의 보조 툴로 사용합니다.<br/>마우스 커서 이동 패턴을 분석하거나 특정 래퍼러 유입 사용자의 무브 패턴을 분석할 때 매우 유용합니다.&rdquo;</p>
+                                    <a class="gotoInterview" href="https://brunch.co.kr/@beusable/37" target="_blank">인트렌치컨설팅 인터뷰 보러가기
+                                        <img class="gotoIcon" src="/img/link-icon@2x.png" alt="go to inverview link">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <div class="col-xs-none col-sm-left intrench--wrap">
+                            <img class="intrench" src="/img/index-interviewer3@2x.png" alt="intrench interview image">
+                        </div>
+                        <div class="col-xs-12 col-sm-right">
+                            <div class="main--interview__content">
+                                <div class="content_inner_wrap">
+                                    <p class="summary"><span class="quote_space">&ldquo;</span>뷰저블은 스크립트만 삽입하면 원하는 데이터가 바로 나와 편합니다. 고객사에 데이터를 설명할 때에도 훨씬 이해가 쉽습니다.&rdquo;</p>
+                                    <a class="gotoInterview" href="https://brunch.co.kr/@beusable/37" target="_blank">인트렌치컨설팅 인터뷰 보러가기
+                                        <img class="gotoIcon" src="/img/link-icon@2x.png" alt="go to inverview link">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <div class="col-xs-none col-sm-left intrench--wrap">
+                            <img class="intrench" src="/img/index-interviewer4@2x.png" alt="intrench interview image">
+                        </div>
+                        <div class="col-xs-12 col-sm-right">
+                            <div class="main--interview__content">
+                                <div class="content_inner_wrap">
+                                    <p class="summary"><span class="quote_space">&ldquo;</span>뷰저블은 툴을 사용하기까지 따로 학습 시간이 걸리지 않으며 고객을 배려하여 대시보드와 서비스가 설계되어 있습니다.&rdquo;</p>
+                                    <a class="gotoInterview" href="https://brunch.co.kr/@beusable/37" target="_blank">인트렌치컨설팅 인터뷰 보러가기
+                                        <img class="gotoIcon" src="/img/link-icon@2x.png" alt="go to inverview link">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <div class="col-xs-none col-sm-left intrench--wrap">
+                            <img class="intrench" src="/img/index-interviewer5@2x.png" alt="intrench interview image">
+                        </div>
+                        <div class="col-xs-12 col-sm-right">
+                            <div class="main--interview__content">
+                                <div class="content_inner_wrap">
+                                    <p class="summary"><span class="quote_space">&ldquo;</span>다른 마케팅 툴을 많이 사용했지만 뷰저블은 시각화와 쉬운 사용법 불편 사항이 생기면 빠르게 개선 피드백을 주는 것에 놀랐습니다.&rdquo;</p>
+                                    <a class="gotoInterview" href="https://brunch.co.kr/@beusable/37" target="_blank">인트렌치컨설팅 인터뷰 보러가기
+                                        <img class="gotoIcon" src="/img/link-icon@2x.png" alt="go to inverview link">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <img class="itv_right bt" src="/img/default_right_bt@3x.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main--video--wrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="video--container">
+                    <!--<div class="video__play_btn"></div>-->
+                    <iframe class="video" width="100%" src="" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main--offer--wrap">
+    <div class="main--offer container">
+        <!--<div class="offer__title&#45;&#45;wrap">-->
+            <!--<h3 class="offer__title">Be Usable!</h3>-->
+        <!--</div>-->
+        <div class="offer__insight">
+            <h4 class="offer__insight__title">UX 빅데이터, 분석부터 검증까지 뷰저블만의 특별한 기능들로 지원합니다.</h4>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4-12">
+                    <a class="offer__function__section scalable"  href="/ux_heatmap">
+                        <div class="tool__funtion__icon ux-heatmap"></div>
+                        <h6 class="insight__section__title minor">UX Heatmap</h6>
+                        <p class="tool__section__desc">사용자의 UX결과를 히트맵 형태로<br/>한눈에 볼 수 있습니다.</p>
+                        <span class="goProduct under_position">더 알아보기 &gt;</span>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4-12 ">
+                    <a class="offer__function__section scalable" href="/reporting">
+                        <div class="tool__funtion__icon reporting-heatmap"></div>
+                        <h6 class="insight__section__title minor">Reporting Heatmap</h6>
+                        <p class="tool__section__desc">히트맵 분석 결과와 이슈를 자동으로<br/>요약하고 정리 해드립니다.</p>
+                        <span class="goProduct">더 알아보기 &gt;</span>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4-12 ">
+                    <a class="offer__function__section scalable" href="/comparing">
+                        <div class="tool__funtion__icon comparing-referrers"></div>
+                        <h6 class="insight__section__title minor">Comparing as Referrers</h6>
+                        <p class="tool__section__desc">유입 경로에 따라 달라지는 UX를<br/>직접 비교해 볼 수 있습니다.</p>
+                        <span class="goProduct under_position">더 알아보기 &gt;</span>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4-12 ">
+                    <a class="offer__function__section scalable" href="/analytics">
+                        <div class="tool__funtion__icon user-heatmap"></div>
+                        <h6 class="insight__section__title minor">User Analytics</h6>
+                        <p class="tool__section__desc">뷰저블을 설치하셨다면 사용자 지표도<br/>실시간으로 볼 수 있습니다.</p>
+                        <span class="goProduct">더 알아보기 &gt;</span>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4-12 ">
+                    <a class="offer__function__section scalable" href="/stream">
+                        <div class="tool__funtion__icon activity-stream"></div>
+                        <h6 class="insight__section__title minor">Activity Stream</h6>
+                        <p class="tool__section__desc">사용자의 탐색순서와 관심 영역을<br/>Gaze plot 형태로 제공합니다.</p>
+                        <span class="goProduct under_position">더 알아보기 &gt;</span>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4-12 ">
+                    <a class="offer__function__section scalable" href="/cta">
+                        <div class="tool__funtion__icon segmenting-cta"></div>
+                        <h6 class="insight__section__title minor">Segmenting as CTA</h6>
+                        <p class="tool__section__desc">특정 버튼이나 클릭 요소를 어떤 유형의<br/>사용자들이 선택했는지 알 수 있습니다.</p>
+                        <span class="goProduct">더 알아보기 &gt;</span>
+                    </a>
+                </div>
+                <!--새로 추가한 세션 a/b testing, funnels, session report -->
+                <div class="col-xs-12 col-sm-6 col-md-4-12 ">
+                    <a class="offer__function__section scalable" href="/abtest">
+                        <div class="tool__funtion__icon ab-testing"></div>
+                        <h6 class="insight__section__title minor">A/B Testing</h6>
+                        <p class="tool__section__desc">단 몇 번의 클릭만으로<br/>UX개선 효과를 측정할 수 있습니다.</p>
+                        <span class="goProduct">더 알아보기 &gt;</span>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4-12 ">
+                    <a class="offer__function__section scalable" href="/funnels">
+                        <div class="tool__funtion__icon funnels"></div>
+                        <h6 class="insight__section__title minor">Funnels</h6>
+                        <p class="tool__section__desc">유입부터 전환까지의 단계별<br/>이탈률을 확인할 수 있습니다.</p>
+                        <span class="goProduct under_position">더 알아보기 &gt;</span>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4-12 ">
+                    <a class="offer__function__section scalable" href="/session">
+                        <div class="tool__funtion__icon session-report"></div>
+                        <h6 class="insight__section__title minor">Session Report</h6>
+                        <p class="tool__section__desc">개별 사용자의 탐색순서와 콘텐츠<br/>소비 흐름을 상세히 파악할 수 있습니다.</p>
+                        <span class="goProduct">더 알아보기 &gt;</span>
+                    </a>
+                </div>
+            </div>
+    </div>
+</div>
+</div>
+<div class="main--blog_partition--wrap">
+    <!--<div class="blog_partition&#45;&#45;header">-->
+        <!--<div class="row">-->
+            <!--<div class="col-xs-12">-->
+                <!--<p class="blog-type-title">Beusable Notice</p>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <div class="row">
+        <div class="col-xs-12 col-sm-6">
+            <a class="blog_partition__image recent_1" href="https://brunch.co.kr/@beusable/66" target="_blank">
+                <span class="black-gradient"></span>
+                <div class="blog_partition__post_info">
+                    <p class="posting_date">2017. 10. 25</p>
+                    <h3 class="posting_title">UX 데이터 분석과 시너지를 발휘하는 '휴리스틱 평가'</h3>
+                </div>
+            </a>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <div class="row">
+                <div class="col-xs-12">
+                    <a class="blog_partition__image recent_2" href="https://brunch.co.kr/@beusable/65" target="_blank">
+                        <span class="black-gradient"></span>
+                        <div class="blog_partition__post_info">
+                            <p class="posting_date">2017. 10. 18</p>
+                            <h3 class="posting_title">(5/10) 전환율 증대를 위한 GUI 개선점 찾기</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <a class="blog_partition__image recent_3" href="https://brunch.co.kr/@beusable/63" target="_blank">
+                        <span class="black-gradient"></span>
+                        <div class="blog_partition__post_info">
+                            <p class="posting_date">2017. 10. 13</p>
+                            <h3 class="posting_title">데이터 드리븐 UX 세미나 2017 Real 후기 1탄</h3>
+                       </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main--try--wrap">
+    <h3>무료로 시작할 수 있습니다!</h3>
+    <a href="tryitforfree" class="btn">Try Beusable</a>
+</div>
+
+<div id="main--popup" class="main--popup">
+    <div class="main--popup__header clearfix">
+        <h2>beusable<img src="img/logo_v3.png" alt="logo"></h2>
+        <!--<h3 class="title">뷰저블 서비스 업데이트 일정 공지</h3>-->
+        <button id="close_popup" class="sprite close_popup">close</button>
+    </div>
+    <div class="main--popup__body">
+        <!--<h3 class="greetings">안녕하세요. UX분석 도구 뷰저블입니다. </h3>-->
+        <!--<p>뷰저블은 더욱 빠르고 안정적인 서비스를 위하여 이번 연휴 기간 동안 <br/>’데이터 구조 개선 작업’을 실시하게 되었음을 안내드립니다.</p>-->
+        <!--<p><strong>&lt;뷰저블 서비스 업데이트 일정&gt;</strong><br/>-->
+        <!--기간 : 2017년 4월 28일 (금) ~ 2017년 5월 7일 (일)<br/>내용 : 서비스 데이터베이스 구조 개선</p>-->
+        <!--<p>서비스 데이터베이스 구조 개선 및 URL match 유형 추가로 인해<br/>‘Simple match’ 유형으로 등록된 페이지의 일부 데이터가 누락되거나<br/>값이 달라질 수 있으며, 개선된 데이터로 이전하는 일정 시간 동안 데이터가 표시되지 않을 수 있습니다.</p>-->
+        <!--<p>정식 서비스 오픈 이후에는 기존 페이지와 신규 페이지 모두 정확한 데이터로 제공 됩니다.</p>-->
+        <!--<p>이러한 조치는 뷰저블 사용자들이 더욱 편리한 서비스를 사용할 수 있도록 하기 위한 것이므로 깊은 양해  부탁드리며 이용에 참고해 주시기 바랍니다. </p>-->
+        <!--<p>이와 관련하여 문의사항이나 의견이 있으시면 메일(beusable@4grit.com)로 연락해 주시길 바랍니다. 친절히 안내해 드리겠습니다. </p>-->
+        <!--<p>감사합니다.</p>-->
+        <!--<h4 class="end">2017. 04. 28<br/>뷰저블 드림</h4>-->
+        <h2 class="title seminar"><b>데이터 드리븐 UX</b><br/><span class="thin">세미나 2017</span></h2>
+        <p class="seminar"><strong>
+            뷰저블에서 '데이터 드리븐 UX'를 주제로<br/>
+            업계를 선도하는 전문가들과 함께 모범 사례와 활용 방안 등을 공유하고<br/>
+            비전을 나누고자 세미나를 마련하였습니다.
+        </strong></p>
+        <p class="seminar"><strong><span class="emphasis_red">2017.9.29 (FRI) 15:00 ~ 18:00</span><br/>서울시 강남구 선릉로 551 디캠프 6층 다목적홀</strong></p>
+
+        <p class="link_section">
+
+            <a class="detail_link" href="https://brunch.co.kr/@beusable/58"><strong>상세 내역 확인하기</strong></a>
+        </p>
+    </div>
+    <div class="main--popup__footer clearfix">
+        <div class="never_again_wrap">
+            <input id="never_again" type="checkbox">
+            <label for="never_again">다시 보지 않기</label>
+        </div>
+    </div>
+</div>
+<!-- footer -->
+<div class="footer_wrap">
+    <div class="footer container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4-12">
+                <p class="logo"><img src="/img/footer_logo-white.png" width="110" height="21" alt="Beusable"></p>
+                <p class="footer__summary">We give you tangible UX insights<br/>that you haven’t experienced before.</p>
+                <span class="footer__copyright">2017 Beusable</span>
+
+                <!--<div class="footer__language">-->
+                    <!--Language Option:-->
+                <!--</div>-->
+                <div class="footer__policy--wrap">
+                    <a class="footer__privacy" href="/privacy">Privacy Policy</a>
+                    <span>&middot;</span>
+                    <a class="footer__terms" href="/terms">Terms of Service</a>
+                </div>
+                <div class="clearfix social">
+                    <a href="https://www.facebook.com/beusable"><img src="/img/facebook-icon@2x.png" class="social__icon social__facebook"></a>
+                    <a href="https://brunch.co.kr/@beusable"><img src="/img/brunch-icon@2x.png"  class="social__icon social__brunch"></a>
+                    <!--<a href="http://blog.naver.com/beusable"><img src="/img/naver-icon@2x.png"  class="social__icon social__naver"></a>-->
+                    <a id="gotoKorean" class="kr" href="#">
+                        <img class="lang_img selected" src="/img/kr_selected.png" alt="view site in Korean" title="Korean">
+                        <img class="lang_img off" src="/img/kr_basic.png" alt="view site in Korean" title="Korean">
+                    </a>
+                    <a id="gotoEnglish" class="en" href="#">
+                        <img class="lang_img selected" src="/img/eng_selected.png" alt="view site in English" title="English">
+                        <img class="lang_img off" src="/img/eng_basic.png" alt="view site in English" title="English">
+                    </a>
+                    <a id="gotoJapanese" class="jp" href="#">
+                        <img class="lang_img selected" src="/img/jap_selected.png" alt="view site in Japanese" title="Japanese">
+                        <img class="lang_img off" src="/img/jap_basic.png" alt="view site in Japanese" title="Japanese">
+                    </a>
+                </div>
+                <div class="company_info">
+                    <!--<p class="info">-->
+                        <!---->
+                        <!--<a href="http://www.4grit.com/" target="_blank"> <strong>(주)포그리트</strong></a>-->
+                        <!--<span class="bar"></span>-->
+                        <!--<strong>사업자 번호</strong>-->
+                        <!--<span>287-87-00326</span>-->
+                        <!--<span class="bar"></span>-->
+                        <!--<strong>Address</strong>-->
+                        <!--<span>경기도 성남시 분당구 대왕판교로 660 유스페이스몰1 A동 303호</span>-->
+                    <!--</p>-->
+                    <p>(주)포그리트 | <strong>대표</strong> 박태준 | <strong>사업자등록번호</strong> 287-87-00326</p>
+                    <p><img class="location_icon" src="/img/location-icon@2x.png" width="11" height="14" alt="location icon">경기도 성남시 분당구 황새울로 311번길 8-5 필립메디컬센터 별관 1층 포그리트</p>
+                    <p><strong>통신판매업 신고번호</strong> 2017 - 성남분당 - 0051 | Tel 031-625-4397</p>
+                </div>
+
+            </div>
+            <div class="col-xs-12 col-sm-8 col-md-8-12">
+                <div class="row">
+                    <div class="footer__list col-xs-12 col-sm-4 col-md-4-12">
+                        <h6>Product</h6>
+                        <ul>
+                            <li><a href="/ux_heatmap">UX Heatmaps</a></li>
+                            <li><a href="/reporting">Reporting Heatmaps</a></li>
+                            <li><a href="/analytics">User Analytics</a></li>
+                            <li><a href="/comparing">Comparing Referrers</a></li>
+                            <li><a href="#">Session Report</a></li>
+                            <li><a href="/cta">Segmenting CTA</a></li>
+                            <li><a href="/stream">Activity Stream</a></li>
+                            <li><a href="#">A/B Testing</a></li>
+                            <li><a href="#">Funnels</a></li>
+                            <li><a href="/attention">Attention Graph</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__list col-xs-12 col-sm-4 col-md-4-12">
+                        <h6>Learn More</h6>
+                        <ul>
+                            <li><a href="/why">Why Beusable?</a></li>
+                            <li><a href="/pricing">Pricing</a></li>
+                            <!--<li><a href="">Blog</a></li>-->
+                            <!--<li><a href="">Partners</a></li>-->
+                        </ul>
+                    </div>
+                    <div class="footer__list col-xs-12 col-sm-4 col-md-4-12">
+                        <h6>About Us</h6>
+                        <ul>
+                            <li><a href="http://www.4grit.com">4grit</a></li>
+                            <li><a href="/press">Press</a></li>
+                            <!--<li><a href="">Press Kit</a></li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<p class="link">-->
+            <!--<a href="../../terms">서비스 이용약관</a>-->
+            <!--<a href="../../privacy">개인정보 취급방침</a>-->
+        <!--</p>-->
+        <!--<p class="copyright">Copyrights 2016.</p>-->
+
+    </div>
+</div>
+
+<script type="text/javascript">
+    (function(w, d, a){
+     w.__beusablerumclient__ = {
+     load : function(src){
+     var b = d.createElement("script");
+     b.src = src; b.async=true; b.type = "text/javascript";
+     d.getElementsByTagName("head")[0].appendChild(b);
+     }
+     };w.__beusablerumclient__.load(a);
+     })(window, document, '//rum.beusable.net/script/b160804e144953u53/856b0b83b6');
+</script>
+
+<!--로컬 테스트용 코드-->
+<!--<script type="text/javascript">-->
+  <!--(function(w, d, a){-->
+    <!--w.__beusablerumclient__ = {-->
+      <!--load : function(src){-->
+        <!--var b = d.createElement("script");-->
+        <!--b.src = src; b.async=true; b.type = "text/javascript";-->
+        <!--d.getElementsByTagName("head")[0].appendChild(b);-->
+      <!--}-->
+    <!--};w.__beusablerumclient__.load(a);-->
+  <!--})(window, document, '//localhost:3300/script/b160804e144953u53/d187961d26');-->
+<!--</script>-->
+
+<!-- Hotjar Tracking Code for http://www.beusable.net/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:264548,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+<!-- google analytics -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-82262138-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+<!-- mouseflow -->
+<script type="text/javascript">
+	var _mfq = _mfq || [];
+	(function() {
+		var mf = document.createElement("script");
+		mf.type = "text/javascript"; mf.async = true;
+		mf.src = "//cdn.mouseflow.com/projects/c749932f-06e1-4742-95e3-b15e2e050998.js";
+		document.getElementsByTagName("head")[0].appendChild(mf);
+	})();
+</script>
+
+<!-- crazyegg -->
+<script type="text/javascript">
+    setTimeout(function(){var a=document.createElement("script");
+        var b=document.getElementsByTagName("script")[0]; a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0055/3453.js?"+Math.floor(new Date().getTime()/3600000); a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+
+<script type="text/javascript">
+    (function(e,t){var n=e.amplitude||{_q:[],_iq:{}};var r=t.createElement("script");r.type="text/javascript";
+        r.async=true;r.src="https://d24n15hnbwhuhn.cloudfront.net/libs/amplitude-3.0.1-min.gz.js";
+        r.onload=function(){e.amplitude.runQueuedFunctions()};var i=t.getElementsByTagName("script")[0];
+        i.parentNode.insertBefore(r,i);function s(e,t){e.prototype[t]=function(){this._q.push([t].concat(Array.prototype.slice.call(arguments,0)));
+            return this}}var o=function(){this._q=[];return this};var a=["add","append","clearAll","prepend","set","setOnce","unset"];
+        for(var u=0;u<a.length;u++){s(o,a[u])}n.Identify=o;var c=function(){this._q=[];return this;
+        };var p=["setProductId","setQuantity","setPrice","setRevenueType","setEventProperties"];
+        for(var l=0;l<p.length;l++){s(c,p[l])}n.Revenue=c;var d=["init","logEvent","logRevenue","setUserId","setUserProperties","setOptOut","setVersionName","setDomain","setDeviceId","setGlobalUserProperties","identify","clearUserProperties","setGroup","logRevenueV2","regenerateDeviceId"];
+        function v(e){function t(t){e[t]=function(){e._q.push([t].concat(Array.prototype.slice.call(arguments,0)));
+        }}for(var n=0;n<d.length;n++){t(d[n])}}v(n);n.getInstance=function(e){e=(!e||e.length===0?"$default_instance":e).toLowerCase();
+            if(!n._iq.hasOwnProperty(e)){n._iq[e]={_q:[]};v(n._iq[e])}return n._iq[e]};e.amplitude=n;
+    })(window,document);
+
+    amplitude.getInstance().init("91dce8e6498e0e8209c66705164456da");
+</script>
+
+<!--zarget-->
+<script src='//cdn.zarget.com/184661/505530.js'></script>
+
+<!-- //footer -->
+
+<script type="text/javascript" src="/tool/js/lib/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/lib/jquery.cookie.js"></script>
+<script src="js/product.js"></script>
+<script src="js/slide.js"></script>
+
+
+</body>
+</html>
